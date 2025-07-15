@@ -26,22 +26,23 @@ export const SignUp = () => {
                 ></input>
               </div>
 
-              {/* поле для ввода email */}
+              {/* поле для ввода password */}
               <div className={styles.input_group}>
                 <input
-                  type="email"
-                  placeholder="Email Address"
+                type="password"
+                  placeholder="Password"
+                  
                   className={styles.input_field}
                 ></input>
               </div>
             </div>
 
-            {/* поле для ввода пароля */}
+            {/* поле для ввода email */}
             <div className={styles.input_row}>
-              <div className={styles.input_group && styles.password}>
+              <div className={styles.input_group}>
                 <input
-                  type="password"
-                  placeholder="Password"
+                  type="email"
+                  placeholder="Email Address"
                   className={styles.input_field}
                 ></input>
               </div>
