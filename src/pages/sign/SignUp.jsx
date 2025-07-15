@@ -11,61 +11,48 @@ export const SignUp = () => {
           {/* header sign up */}
           <div className={styles.form_header}>
             <h1>Sign up</h1>
-            <p>fill all field for create an account.</p>
+            <p>Fill all field for create an account.</p>
           </div>
           {/* основная форма */}
-          <div className={styles.form_body}>
-            <form>
-              {/* контейнер для полей ввода */}
-              <div className={styles.input_row}>
-                {/* поле для ввода имени */}
-                <div className={styles.input_group}>
-                  <input
-                    type="text"
-                    placeholder="Username"
-                    className={styles.input_field}
-                  ></input>
-                  <img
-                    src={user}
-                    alt="user"
-                    className={styles.input_icon}
-                  ></img>
-                </div>
-
-                {/* поле для ввода email */}
-                <div className={styles.input_group}>
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    className={styles.input_field}
-                  ></input>
-                  <img
-                    src={sign}
-                    alt="sign"
-                    className={styles.input_icon}
-                  ></img>
-                </div>
+          <form className={styles.form_body}>
+            {/* контейнер для полей ввода */}
+            <div className={styles.input_row}>
+              {/* поле для ввода имени */}
+              <div className={styles.input_group}>
+                <input
+                  type="text"
+                  placeholder="Username"
+                  className={styles.input_field}
+                ></input>
               </div>
 
-              {/* поле для ввода пароля */}
-              <div className={styles.input_row}>
-                <div className={styles.input_group && styles.password}>
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    className={styles.input_field}
-                  ></input>
-                  <img src={eye} alt="eye" className={styles.input_icon}></img>
-                </div>
-
-                <div className={styles.button_container}>
-                  <button type="submit" className={styles.submit_btn}>
-                    Sign Up
-                  </button>
-                </div>
+              {/* поле для ввода email */}
+              <div className={styles.input_group}>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className={styles.input_field}
+                ></input>
               </div>
-            </form>
-          </div>
+            </div>
+
+            {/* поле для ввода пароля */}
+            <div className={styles.input_row}>
+              <div className={styles.input_group && styles.password}>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  className={styles.input_field}
+                ></input>
+              </div>
+
+              <div className={styles.button_container}>
+                <button type="submit" className={styles.submit_btn}>
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </main>
