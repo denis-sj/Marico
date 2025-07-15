@@ -18,7 +18,7 @@ export const SignUp = () => {
             {/* контейнер для полей ввода */}
             <div className={styles.input_row}>
               {/* поле для ввода имени */}
-              <div className={styles.input_group}>
+              <div className={`${styles.input_group} ${styles.input_username}`}>
                 <input
                   type="text"
                   placeholder="Username"
@@ -27,11 +27,10 @@ export const SignUp = () => {
               </div>
 
               {/* поле для ввода password */}
-              <div className={styles.input_group}>
+              <div className={`${styles.input_group} ${styles.input_password}`}>
                 <input
-                type="password"
+                  type="password"
                   placeholder="Password"
-                  
                   className={styles.input_field}
                 ></input>
               </div>
@@ -39,7 +38,7 @@ export const SignUp = () => {
 
             {/* поле для ввода email */}
             <div className={styles.input_row}>
-              <div className={styles.input_group}>
+              <div className={`${styles.input_group} ${styles.input_email}`}>
                 <input
                   type="email"
                   placeholder="Email Address"
