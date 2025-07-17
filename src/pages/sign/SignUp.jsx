@@ -1,3 +1,4 @@
+import Button from "../../components/Button/Button";
 import { Layout } from "../../components/Layout/Layout";
 import styles from "./styles.module.css";
 
@@ -45,9 +46,7 @@ export const SignUp = () => {
               </div>
 
               <div className={styles.button_container}>
-                <button type="submit" className={styles.submit_btn}>
-                  Sign Up
-                </button>
+                <Button />
               </div>
             </div>
           </form>
