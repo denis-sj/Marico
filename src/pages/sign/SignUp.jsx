@@ -1,11 +1,10 @@
+
+import { Layout } from "../../components/Layout/Layout";
 import styles from "./styles.module.css";
-import user from "../../assets/SignUp/User.svg";
-import sign from "../../assets/SignUp/At_sign.svg";
-import eye from "../../assets/SignUp/Eye.svg";
 
 export const SignUp = () => {
   return (
-    <main className={styles.main}>
+    <Layout>
       <div className={styles.page_container}>
         <div className={styles.form_container}>
           {/* header sign up */}
@@ -54,7 +53,8 @@ export const SignUp = () => {
             </div>
           </form>
         </div>
+        
       </div>
-    </main>
+    </Layout>
   );
 };

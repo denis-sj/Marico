@@ -1,10 +1,4 @@
-.main {
-  background-color: black;
-  min-height: calc(100vh - 120px);
-  color: white;
-  display: flex;
-  justify-content: center;
-}
+
 
 .page_container {
   width: 50%;
@@ -71,10 +65,9 @@
 }
 
 .input_group::after {
-  /* Используем ::after вместо ::before */
   content: "";
   position: absolute;
-  right: 15px; /* Позиционируем справа */
+  right: 15px;
   top: 50%;
   transform: translateY(-50%);
   width: 30px;
@@ -82,7 +75,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
 }
 
 .input_username::after {
