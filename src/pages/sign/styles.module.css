@@ -1,8 +1,6 @@
-
-
 .page_container {
-  width: 50%;
-  height: 50vh;
+  width: 100%;
+  height: 120;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +8,7 @@
 }
 
 .form_container {
-  width: 100%;
+  width: 50%;
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
@@ -25,7 +23,7 @@
 .form_header h1 {
   padding-bottom: 10px;
   font-weight: 600;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .form_header p {
@@ -100,4 +98,165 @@
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+}
+
+
+.cont_text_signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4em;
+}
+
+.cont_text_signup h1 {
+  font-size: 3rem;
+}
+
+.cont_text_signup p {
+  font-size: 2rem;
+}
+
+.cont_column {
+  display: grid;
+  padding-top: 2em;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10em;
+}
+
+
+.button {
+  font-weight: 500;
+  padding: 15px 100px;
+  border-radius: 12px;
+  color: white;
+  background-color: #000000;
+  font-size: 16px;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.text_login {
+  padding-top: 2em;
+}
+
+.cont_btn {
+  position: relative;
+}
+
+.cont_btn::before {
+  content: "";
+  position: absolute;
+  left: 4em;
+  top: 48%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.btn_google::before {
+  background-image: url("../../assets/Footer/G_logo.svg");
+}
+
+.btn_facebook::before {
+  background-image: url("../../assets/Footer/Shape-16.svg");
+}
+
+.btn_apple::before {
+  background-image: url("../../assets//Footer/Shape-19.svg");
+}
+
+.text_login a {
+  cursor: pointer;
+  border-bottom: 1px solid rgb(171, 240, 228);
+}
+
+
+@media (max-width: 1024px) {
+  .form_container {
+    width: 80%;
+  }
+  .form_header h1 {
+    font-size: 3rem;
+  }
+  .form_header p {
+    font-size: 1.3rem;
+  }
+  .cont_text_signup h1 {
+    font-size: 2rem;
+  }
+  .cont_text_signup p {
+    font-size: 1rem;
+  }
+  .cont_column {
+    gap: 3em;
+  }
+}
+
+@media (max-width: 700px) {
+  .page_container {
+    padding: 1em 0.5em;
+    height: auto;
+  }
+
+  .form_container {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .form_body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding-top: 10px;
+  }
+
+  .input_row {
+    gap: 1.2em;
+  }
+
+  .cont_column {
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding-top: 1.2em;
+  }
+
+  .button {
+    width: 100%;
+    padding: 12px 12px;
+    font-size: 1rem;
+  }
+
+  .submit_btn {
+    min-height: 38px;
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .form_header h1 {
+    font-size: 2rem;
+  }
+  .form_header p {
+    font-size: 1rem;
+  }
+  .cont_text_signup h1 {
+    font-size: 1rem;
+  }
+  .cont_text_signup p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .form_container {
+    padding: 0;
+  }
+  .button, .submit_btn {
+    font-size: 0.9rem;
+    padding: 8px 8px;
+  }
 }

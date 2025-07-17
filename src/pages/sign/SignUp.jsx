@@ -1,4 +1,3 @@
-
 import { Layout } from "../../components/Layout/Layout";
 import styles from "./styles.module.css";
 
@@ -53,7 +52,32 @@ export const SignUp = () => {
             </div>
           </form>
         </div>
-        
+
+        {/* footer */}
+        <div className={styles.cont_text_signup}>
+          <h1>Or</h1>
+          <p>Sign up with...</p>
+        </div>
+        <div className={styles.cont_column}>
+          <div className={`${styles.cont_btn} ${styles.btn_apple}`}>
+            <button type="button" className={styles.button}>
+              Sign up with Apple
+            </button>
+          </div>
+          <div className={`${styles.cont_btn} ${styles.btn_facebook}`}>
+            <button type="button" className={styles.button}>
+              Sign up with Facebook
+            </button>
+          </div>
+          <div className={`${styles.cont_btn} ${styles.btn_google}`}>
+            <button type="button" className={styles.button}>
+              Sign up with Google
+            </button>
+          </div>
+        </div>
+        <p className={styles.text_login}>
+          Already have an account? Please <a>Log in</a>.
+        </p>
       </div>
     </Layout>
   );
