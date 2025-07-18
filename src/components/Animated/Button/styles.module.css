@@ -1,6 +1,6 @@
 .super_button {
   position: relative;
-  width: 100%;
+  width: var(--button-width, 100%);
   display: inline-flex;
   align-items: center;
   justify-content: center;

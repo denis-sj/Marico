@@ -21,6 +21,10 @@
   align-items: center;
 }
 
+.logo h1 {
+  cursor: pointer;
+}
+
 .name {
   padding-left: 20px;
   color: white;

@@ -1,10 +1,13 @@
 import styles from "./styles.module.css";
-import styled from "styled-components";
 
-const Button = () => {
+const Button = ({ width = "100%", ...props }) => {
   return (
     <>
-      <button className={styles.super_button}>
+      <button
+        className={styles.super_button}
+        style={{ "--button-width": width }}
+        {...props}
+      >
         <span>Sign Up</span>
         <svg fill="none" viewBox="0 0 24 24" className={styles.arrow}>
           <path

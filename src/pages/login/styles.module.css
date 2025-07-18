@@ -1,9 +1,9 @@
 .page_container {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .form_container {
@@ -29,17 +29,16 @@
 }
 
 .form_body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   padding-top: 20px;
-  gap: 7em;
+  gap: 3em;
 }
 
 .input_row {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
-  gap: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10em; 
 }
 
 .input_field {
@@ -50,6 +49,8 @@
   color: white;
   font-size: 1rem;
   font-weight: 100;
+  padding-bottom: 6px;
+
 }
 
 .input_field::placeholder {
@@ -63,7 +64,7 @@
 .input_group::after {
   content: "";
   position: absolute;
-  right: 15px;
+  right: 4px;
   top: 50%;
   transform: translateY(-50%);
   width: 30px;
@@ -81,29 +82,20 @@
   background-image: url("../../assets/SignUp/Eye.svg");
 }
 
-.input_email::after {
-  background-image: url("../../assets/SignUp/At_sign.svg");
+.button_container {
+    padding-top: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.submit_btn {
-  width: 100%;
-  min-height: 48px;
-  font-weight: 500;
-  padding: 12px 24px;
-  border-radius: 12px;
-  color: white;
-  background-color: #4285f4;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
+/* footer */
 
 .cont_text_signup {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 4em;
+  padding-top: 2em;
 }
 
 .cont_text_signup h1 {
@@ -170,94 +162,5 @@
 
 .text_login a {
   cursor: pointer;
-  border-bottom: 1px solid rgb(255, 255, 255);
-  color:white;
-}
-
-
-
-/* Адаптив */
-@media (max-width: 1024px) {
-  .form_container {
-    width: 80%;
-  }
-  .form_header h1 {
-    font-size: 3rem;
-  }
-  .form_header p {
-    font-size: 1.3rem;
-  }
-  .cont_text_signup h1 {
-    font-size: 2rem;
-  }
-  .cont_text_signup p {
-    font-size: 1rem;
-  }
-  .cont_column {
-    gap: 3em;
-  }
-}
-
-@media (max-width: 700px) {
-  .page_container {
-    padding: 1em 0.5em;
-    height: auto;
-  }
-
-  .form_container {
-    width: 100%;
-    min-width: 0;
-  }
-
-  .form_body {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5em;
-    padding-top: 10px;
-  }
-
-  .input_row {
-    gap: 1.2em;
-  }
-
-  .cont_column {
-    grid-template-columns: 1fr;
-    gap: 1em;
-    padding-top: 1.2em;
-  }
-
-  .button {
-    width: 100%;
-    padding: 12px 12px;
-    font-size: 1rem;
-  }
-
-  .submit_btn {
-    min-height: 38px;
-    font-size: 1rem;
-    padding: 8px 16px;
-  }
-
-  .form_header h1 {
-    font-size: 2rem;
-  }
-  .form_header p {
-    font-size: 1rem;
-  }
-  .cont_text_signup h1 {
-    font-size: 1rem;
-  }
-  .cont_text_signup p {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .form_container {
-    padding: 0;
-  }
-  .button, .submit_btn {
-    font-size: 0.9rem;
-    padding: 8px 8px;
-  }
+  border-bottom: 1px solid rgb(171, 240, 228);
 }

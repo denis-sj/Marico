@@ -1,9 +1,8 @@
-import { Link, useNavigate } from "react-router";
 import Button from "../../components/Animated/Button/Button";
 import { Layout } from "../../components/Layout/Layout";
 import styles from "./styles.module.css";
 
-export const SignUp = () => {
+export const Login = () => {
   const handleApple = () => {
     window.location.href = "https://www.apple.com";
   };
@@ -21,9 +20,10 @@ export const SignUp = () => {
         <div className={styles.form_container}>
           {/* text sign up */}
           <div className={styles.form_header}>
-            <h1>Sign up</h1>
-            <p>Fill all field for create an account.</p>
+            <h1>Log in</h1>
+            <p>Login into existing account.</p>
           </div>
+
           {/* основная форма */}
           <form className={styles.form_body}>
             {/* контейнер для полей ввода */}
@@ -31,7 +31,6 @@ export const SignUp = () => {
               {/* поле для ввода имени */}
               <div className={`${styles.input_group} ${styles.input_username}`}>
                 <input
-                  type="text"
                   placeholder="Username"
                   className={styles.input_field}
                 ></input>
@@ -40,27 +39,15 @@ export const SignUp = () => {
               {/* поле для ввода password */}
               <div className={`${styles.input_group} ${styles.input_password}`}>
                 <input
-                  type="password"
                   placeholder="Password"
                   className={styles.input_field}
                 ></input>
               </div>
             </div>
 
-            {/* поле для ввода email */}
-            <div className={styles.input_row}>
-              <div className={`${styles.input_group} ${styles.input_email}`}>
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  className={styles.input_field}
-                ></input>
-              </div>
-
-              {/* button */}
-              <div className={styles.button_container}>
-                <Button />
-              </div>
+            {/* button */}
+            <div className={styles.button_container}>
+              <Button width="50%" />
             </div>
           </form>
         </div>
@@ -100,7 +87,7 @@ export const SignUp = () => {
           </div>
         </div>
         <p className={styles.text_login}>
-          Already have an account? Please <Link to = "/login">Log in</Link>.
+          Already have an account? Please <a>Log in</a>.
         </p>
       </div>
     </Layout>
