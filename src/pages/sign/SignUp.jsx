@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router";
 import Button from "../../components/Animated/Button/Button";
 import { Layout } from "../../components/Layout/Layout";
 import styles from "./styles.module.css";
+import SplitText from "../../components/Animated/SplitText/SplitText";
 
 export const SignUp = () => {
   const handleApple = () => {
@@ -21,7 +22,7 @@ export const SignUp = () => {
         <div className={styles.form_container}>
           {/* text sign up */}
           <div className={styles.form_header}>
-            <h1>Sign up</h1>
+            <SplitText text= "Sign Up"/>
             <p>Fill all field for create an account.</p>
           </div>
           {/* основная форма */}

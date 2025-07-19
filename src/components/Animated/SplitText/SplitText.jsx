@@ -2,6 +2,7 @@ import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText as GSAPSplitText } from "gsap/SplitText";
+import styles from './styles.module.css'
 
 gsap.registerPlugin(ScrollTrigger, GSAPSplitText);
 
@@ -133,7 +134,7 @@ const SplitText = ({
   ]);
 
   return (
-    <p
+    <h1
       ref={ref}
       className={`split-parent ${className}`}
       style={{
@@ -145,7 +146,7 @@ const SplitText = ({
       }}
     >
       {text}
-    </p>
+    </h1>
   );
 };
 

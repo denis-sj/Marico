@@ -1,4 +1,5 @@
 import Button from "../../components/Animated/Button/Button";
+import SplitText from "../../components/Animated/SplitText/SplitText";
 import { Layout } from "../../components/Layout/Layout";
 import styles from "./styles.module.css";
 
@@ -20,7 +21,7 @@ export const Login = () => {
         <div className={styles.form_container}>
           {/* text sign up */}
           <div className={styles.form_header}>
-            <h1>Log in</h1>
+            <SplitText text ="Login"/>
             <p>Login into existing account.</p>
           </div>
 
