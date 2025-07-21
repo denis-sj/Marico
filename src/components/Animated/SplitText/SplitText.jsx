@@ -2,7 +2,7 @@ import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText as GSAPSplitText } from "gsap/SplitText";
-import styles from './styles.module.css'
+import './styles.css'
 
 gsap.registerPlugin(ScrollTrigger, GSAPSplitText);
 

@@ -1,7 +1,6 @@
 .cont_MainCreator {
   padding-top: clamp(8rem, 15vw, 15rem);
   width: 100%;
-  padding-inline: clamp(1rem, 5vw, 3rem);
 }
 
 .cont_text {

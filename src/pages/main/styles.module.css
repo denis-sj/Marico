@@ -45,15 +45,25 @@
 }
 
 .btn_started {
-  border-radius: 5%;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
-  background-color: black;
+  
   background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
   color: white;
   font-size: 15px;
+  font-weight: 500;
   box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
-  font-weight: 100;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  min-height: 48px;
+  min-width: 120px;
 }
 
 .btn_started:hover {
@@ -63,12 +73,24 @@
 }
 
 .btn_view {
-  font-size: 15px;
-  cursor: pointer;
-  color: gray;
-  background-color: transparent;
   border: 1px solid #707070;
-  border-radius: 5%;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  background-color: transparent;
+  color: #707070;
+  font-size: 15px;
+  font-weight: 400;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  min-height: 48px;
+  min-width: 120px;
 }
 
 .cont_text {
