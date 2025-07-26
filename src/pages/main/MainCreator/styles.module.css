@@ -28,7 +28,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: clamp(2rem, 8vw, 10rem);
-  max-width: 1200px;
+  max-width: 1600px;
   width: 100%;
 }
 
@@ -52,7 +52,6 @@
 .creators_info h2 {
   font-size: clamp(1.5rem, 4vw, 2.2rem);
   font-weight: 500;
-  margin: 0;
   line-height: 1.3;
 }
 
@@ -139,6 +138,135 @@
   transform: translateY(-1px);
 }
 
+/* HomePage */
+
+
+.cont_homePage {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-weight: 100;
+  padding-top: 5em;
+}
+
+.homePage {
+  padding: 5em;
+  font-weight: 100;
+}
+
+.cont_text_homePage {
+  padding-bottom: 80px;
+}
+
+.cont_text_main {
+  width: 65%;
+  padding-bottom: 27px;
+}
+.cont_text_main h1 {
+  font-size: 4rem;
+}
+
+.cont_text_main strong {
+  color: #3c82f4;
+}
+
+.cont_text_for_info {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.image_wrapper {
+  position: relative;
+  display: inline-block;
+  padding-right: 12px;
+}
+
+.cont_text_for_info img {
+  display: block; /* Убираем лишние отступы у изображения */
+}
+
+.img_number {
+  position: absolute;
+  top: 55%; /* Центр изображения по вертикали */
+  left: 40%; /* Центр изображения по горизонтали */
+  transform: translate(-50%, -50%);
+  
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+
+.cont_btn {
+  width: 50%;
+  padding-top: 4.125em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.btn_started {
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  min-height: 48px;
+  min-width: 120px;
+}
+
+.btn_started:hover {
+  background: linear-gradient(135deg, #4338ca 0%, #2563eb 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
+}
+
+.btn_view {
+  border: 1px solid #707070;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  background-color: transparent;
+  color: #707070;
+  font-size: 15px;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  min-height: 48px;
+  min-width: 120px;
+}
+
+.image {
+  display: flex;
+  justify-content: end;
+}
+
+
+
+
+
+
 /* Адаптив */
 /* Специфичные медиа-запросы для критических изменений */
 @media (max-width: 768px) {
@@ -186,6 +314,86 @@
 /* Очень большие экраны */
 @media (min-width: 1920px) {
   .cont_MainCreator {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+
+/* HomePage Adaptive Styles */
+@media (max-width: 768px) {
+  .cont_homePage {
+    grid-template-columns: 1fr;
+    padding-top: clamp(2rem, 6vw, 3rem);
+    gap: clamp(2rem, 6vw, 3rem);
+  }
+
+  .homePage {
+    padding: clamp(1.5rem, 4vw, 3rem);
+  }
+
+  .cont_text_homePage {
+    padding-bottom: clamp(2rem, 8vw, 4rem);
+  }
+
+  .cont_text_main {
+    width: 95%;
+  }
+
+  .cont_text_main h1 {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+  }
+
+  .cont_btn {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: clamp(1rem, 4vw, 1.5rem);
+    padding-top: clamp(2rem, 6vw, 3rem);
+  }
+
+  .image {
+    justify-content: center;
+    padding-top: clamp(1rem, 4vw, 2rem);
+  }
+
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .homePage {
+    padding: 1.5rem 1rem;
+  }
+
+  .cont_text_homePage {
+    padding-bottom: 2rem;
+  }
+
+  .cont_text_main h1 {
+    font-size: 2.2rem;
+  }
+
+  .cont_btn {
+    padding-top: 2rem;
+  }
+
+  .btn_started,
+  .btn_view {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .img_number {
+    font-size: 16px;
+  }
+}
+
+/* Large screens optimization */
+@media (min-width: 1920px) {
+  .cont_homePage {
     max-width: 1600px;
     margin: 0 auto;
   }

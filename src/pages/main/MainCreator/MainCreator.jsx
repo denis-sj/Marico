@@ -2,6 +2,8 @@ import styles from "./styles.module.css";
 import smile from "../../../assets/Main/MainCreator/Smile_emoji.svg";
 import happy from "../../../assets/Main/MainCreator/Happy_emoji.svg";
 import party from "../../../assets/Main/MainCreator/Party_emoji.svg";
+import base from "../../../assets/Main/MainCreator/Base.svg";
+import content from "../../../assets/Main/MainCreator/Image.svg";
 
 export const MainCreator = () => {
   return (
@@ -71,6 +73,48 @@ export const MainCreator = () => {
           </div>
         </div>
       </section>
+
+{/* homePage */}
+      <div className={styles.cont_homePage}>
+        <section className={styles.homePage}>
+          <div className={styles.cont_text_homePage}>
+            <h2>Your Homepage</h2>
+          </div>
+
+          <div className={styles.cont_text_main}>
+            <h1>
+              Your Content. All in <strong>One Spot</strong>
+            </h1>
+          </div>
+
+          <div className={styles.content_info}>
+            <div className={styles.cont_text_for_info}>
+              <div className={styles.image_wrapper}>
+                <img src={base} alt="base"></img>
+                <span className={styles.img_number}>1</span>
+              </div>
+              <p>Bring all of your content together into one homepage.</p>
+            </div>
+
+            <div className={styles.cont_text_for_info}>
+              <div className={styles.image_wrapper}>
+                <img src={base} alt="base"></img>
+                <span className={styles.img_number}>2</span>
+              </div>
+              <p>Your page automatically updates whenever you create.</p>
+            </div>
+          </div>
+
+          <div className={styles.cont_btn}>
+            <button className={styles.btn_started}>Get Started Now</button>
+            <button className={styles.btn_view}>View A Demo</button>
+          </div>
+        </section>
+
+        <section className={styles.image}>
+          <img src={content} alt="content"></img>
+        </section>
+      </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { Layout } from "../../components/Layout/Layout";
 import styles from "./styles.module.css";
 import dot from "../../assets/Main/Dot.svg";
 import { MainCreator } from "./MainCreator/MainCreator";
-import { MainHomePage } from "./MainHomePage/MainHomePage";
+import { StepTwo } from "./MainHomePage/StepTwo";
 
 export const Main = () => {
   return (
@@ -37,7 +37,7 @@ export const Main = () => {
       </div>
 
       <MainCreator />
-      <MainHomePage />
+      <StepTwo />
     </Layout>
   );
 };
